@@ -28,9 +28,16 @@ function(event)
 
     if(isNaN(number))
     {
-        if(number == 'C')
+        if(number == 'C') //here>>>>>>>>>>>>>>>>>>>>>
         {
+            //Clear User Pin-Input
             calcInput.value = '';
+
+            //Clear Notification
+            document.getElementById('notify-success').style.display = 'none';
+            document.getElementById('notify-fail').style.display = 'none';
+                        
+
         }
     }
     else
